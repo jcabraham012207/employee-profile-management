@@ -1,73 +1,58 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    background: #f4f6f8;
-    color: #333;
-}
+<body>
 
-header {
-    background: #1f2937;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    <header>
+        <h1>Employee Management Profile</h1>
+        <p>Employee Information System</p>
+    </header>
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 30px auto;
-}
+    <div class="container">
+        <div class="profile">
+            <h2>Employee Profile</h2>
 
-.profile {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+            <div class="info">
+                <div>
+                    <span class="label">Employee ID</span>
+                    EMP001
+                </div>
 
-.profile h2 {
-    margin-bottom: 20px;
-}
+                <div>
+                    <span class="label">Name</span>
+                    James Abraham
+                </div>
 
-.info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
+                <div>
+                    <span class="label">Position</span>
+                    Employee
+                </div>
 
-.info div {
-    padding: 12px;
-    background: #f9fafb;
-    border-radius: 6px;
-}
+                <div>
+                    <span class="label">Department</span>
+                    Information Technology
+                </div>
 
-.label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
+                <div>
+                    <span class="label">Email</span>
+                    employee@example.com
+                </div>
 
-button {
-    margin-top: 20px;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 6px;
-    background: #2563eb;
-    color: white;
-    cursor: pointer;
-}
+                <div>
+                    <span class="label">Status</span>
+                    Active
+                </div>
+            </div>
 
-button:hover {
-    background: #1d4ed8;
-}
+            <button>View Employee</button>
+        </div>
+    </div>
 
-@media (max-width: 600px) {
-    .info {
-        grid-template-columns: 1fr;
-    }
-}
+</body>
+</html>
