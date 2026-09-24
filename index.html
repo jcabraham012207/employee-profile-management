@@ -3,56 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Management Profile</title>
+    <title>Employee Management System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Employee Management Profile</h1>
-        <p>Employee Information System</p>
-    </header>
+    <div id="loginPage">
+        <div class="login-box">
+            <h1>Employee Management System</h1>
+            <p>Login to continue</p>
 
-    <div class="container">
-        <div class="profile">
-            <h2>Employee Profile</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
 
-            <div class="info">
-                <div>
-                    <span class="label">Employee ID</span>
-                    EMP001
-                </div>
+            <button onclick="login()">Login</button>
 
-                <div>
-                    <span class="label">Name</span>
-                    James Abraham
-                </div>
-
-                <div>
-                    <span class="label">Position</span>
-                    Employee
-                </div>
-
-                <div>
-                    <span class="label">Department</span>
-                    Information Technology
-                </div>
-
-                <div>
-                    <span class="label">Email</span>
-                    employee@example.com
-                </div>
-
-                <div>
-                    <span class="label">Status</span>
-                    Active
-                </div>
-            </div>
-
-            <button>View Employee</button>
+            <p id="loginError"></p>
         </div>
     </div>
+
+    <div id="dashboard" style="display: none;">
+
+        <header>
+            <h1>Employee Management Profile</h1>
+            <p>Employee Information System</p>
+        </header>
+
+        <div class="container">
+            <div class="profile">
+                <h2>Employee Profile</h2>
+
+                <div class="info">
+                    <div>
+                        <span class="label">Employee ID</span>
+                        EMP001
+                    </div>
+
+                    <div>
+                        <span class="label">Name</span>
+                        James Abraham
+                    </div>
+
+                    <div>
+                        <span class="label">Position</span>
+                        Employee
+                    </div>
+
+                    <div>
+                        <span class="label">Department</span>
+                        Information Technology
+                    </div>
+
+                    <div>
+                        <span class="label">Email</span>
+                        employee@example.com
+                    </div>
+
+                    <div>
+                        <span class="label">Status</span>
+                        Active
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
